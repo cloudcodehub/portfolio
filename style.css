@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navListDesign {
+  @apply transition-all cursor-pointer text-white flex items-center text-4xl
+}
+
+.MenuIcon {
+  @apply pr-2 text-2xl sm:text-6xl
+}

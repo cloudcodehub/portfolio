@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>rahulmagar</title>
+</head>
+
+<body class="bg-[rgb(19,19,19)] h-screen w-full">
+  <nav class="fixed top-0 left-0 bg-[#131313] w-full flex justify-between items-center h-16 z-20">
+    <div class="logo pl-4">
+      <img loading="lazy" class="h-9" src="/logo.svg" alt="">
+    </div>
+    <div id="openMenu" class="bar pr-4">
+      <p class="transition-all text-xl text-white cursor-pointer hover:text-2xl ">
+        menu
+      </p>
+    </div>
+  </nav>
+  <!-- L I S T   V I E W   W R A P P E R -->
+  <div id="menulistView"
+    class="transition-all fixed h-screen top-0 right-0 w-0 bg-black flex flex-col justify-center overflow-x-hidden z-30 ">
+    <div id="close" class=" text-white absolute top-3 right-4 cursor-pointer">
+      <span class="material-symbols-outlined text-4xl ">
+        close
+      </span>
+    </div>
+    <!-- NAV LIST -->
+    <ul id="listofnav " class="relative">
+      <div class="w-full h-12 bg-black flex items-center justify-center p-8 relative ">
+        <div
+          class="featuredImg transition-all bg-white h-0  min-w-44 max-w-72 absolute bottom-11  z-10 rounded-2xl overflow-hidden">
+          <video id="aboutFeatureVid" class="h-full object-cover " src="/about.mp4" muted playsinline></video>
+        </div>
+        <li href="#Home" class="navListDesign">Home</li>
+      </div>
+      <div class="w-full h-12 bg-black flex items-center justify-center p-8 relative ">
+        <div
+          class="featuredImg transition-all bg-white h-0  min-w-44 max-w-72 absolute bottom-11  z-10 rounded-2xl overflow-hidden">
+          <video id="aboutFeatureVid" class="h-full object-cover " src="/about.mp4" muted playsinline></video>
+        </div>
+        <li href="#About" class="navListDesign">About Me</li>
+      </div>
+
+      <div class="w-full h-12 bg-black flex items-center justify-center p-8 relative ">
+        <div
+          class="featuredImg transition-all bg-white h-0  min-w-44 max-w-72 absolute bottom-11 z-10 rounded-2xl  overflow-hidden">
+          <video id="aboutFeatureVid" class="h-full w-full object-cover " src="/proj.mp4" muted playsinline></video>
+        </div>
+        <li class="navListDesign">Recent Projects</li>
+      </div>
+
+      <div class="w-full h-12 bg-black flex items-center justify-center p-8 relative ">
+        <div
+          class="featuredImg transition-all bg-white h-0  min-w-44 max-w-72 absolute bottom-11 z-10 rounded-2xl  overflow-hidden">
+          <video id="aboutFeatureVid" class="h-full object-cover " src="/about.mp4" muted playsinline></video>
+        </div>
+        <li class="navListDesign">My Skills</li>
+      </div>
+
+      <div class="w-full h-12 bg-black flex items-center justify-center p-8 relative ">
+        <div
+          class="featuredImg transition-all bg-white h-0  min-w-44 max-w-72 absolute bottom-11 z-10 rounded-2xl  overflow-hidden">
+          <video id="aboutFeatureVid" class="h-full object-cover " src="/about.mp4" muted playsinline></video>
+        </div>
+        <li class="navListDesign">Contributions</li>
+      </div>
+
+      <div class="w-full h-12 bg-black flex items-center justify-center p-8 relative ">
+        <div
+          class="featuredImg transition-all bg-white h-0  min-w-44 max-w-72 absolute bottom-11 z-10 rounded-2xl overflow-hidden">
+          <video id="aboutFeatureVid" class="h-full object-cover " src="/about.mp4" muted playsinline></video>
+        </div>
+        <li class="navListDesign">Clients</li>
+      </div>
+    </ul>
+  </div>
+  <!-- P A G E 1    O R    H O M E    P A G E -->
+  <div class="Page transition-all delay-200 h-screen w-full flex justify-center items-center flex-col sm:flex-row ">
+
+    <div class="content  h-full w-full flex justify-center items-center flex-col sm:flex-row ">
+      <div id="Pimage" class="mainImg h-[45%] w-52 rounded-[4rem] overflow-hidden ">
+        <img loading="lazy" class="h-full object-cover" src="/bg.jpg" alt="">
+      </div>
+      <div id="mainText" class="transition-all text mt-8 sm:ml-4 lg:ml-10 ">
+        <img loading="lazy" class="h-36 sm:h-48 lg:h-80" src="/text.svg" alt="">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- A B O U T   M E  P A G E -->
+  <div
+    class="Page transition-all  bg-[rgb(19,19,19)] h-screen w-0 fixed top-0 left-0 text-white flex flex-col items-center justify-center overflow-x-hidden sm:flex-row ">
+    <!-- A B O U T   T E X  -->
+    <div
+      class="title relative flex justify-center items-center font-medium pb-3 tracking-wider mt-4 sm:mt-0  sm:h-screen sm:w-32  ">
+      <p
+        class=" text-4xl mt-5 sm:mt-0 sm:-rotate-90 sm:whitespace-nowrap sm:text-7xl sm:tracking-widest sm:font-bold md:text-8xl md:font-semibold md:tracking-wide  ">
+        ABOUT ME</p>
+    </div>
+
+    <!-- A B O U T   I M A G  -->
+    <div class="AboutImage h-2/5 w-full flex items-center justify-center sm:h-screen sm:w-[25%] ">
+      <div class="imagebox overflow-hidden rounded-3xl w-52 h-full sm:h-[45%] md:h-1/2 md:w-[80%]">
+        <img loading="lazy" class="h-full object-cover" src="/about.jpeg" alt="I M A G E">
+      </div>
+    </div>
+
+    <!-- A B O U T  C O N T E N T  -->
+    <div class="wrapper flex flex-col justify-center items-center h  sm:w-[65%] sm:items-start  md:h-1/2 ">
+      <div
+        class="subtitle text-2xl uppercase w-10/12 font-medium text-start m-3 sm:pl-8 sm:m-0 sm:mb-4 sm:text-3xl  md:text-5xl md:w-[70%] md:h-[25%] md:tracking-wide md:font-semibold ">
+        I Am A
+        <span class="text-[#8A6BE4]">Developer </span>
+        And A
+        <span class="text-[#69AEFF]">Designer </span>.
+      </div>
+      <div
+        class="description w-10/12 text-sm sm:pl-8 sm:text-lg  md:text-2xl md:font-extralight md:w-[65%] md:h-[75%] md:tracking-wide md:pt-6 ">
+        With experience of 6 years in web & mobile application development. I am not a professional developer
+        but
+        its my hubby and interest. I love to help other people achieve their dreams. I am interested on creating
+        something that brings value in the life of other people. Hey we can be a mentor for each other on any of
+        your open source project. I will be fully dedicated towards it.
+      </div>
+    </div>
+  </div>
+
+  <!-- P R O J E C T   P A G E -->
+  <div class="Page bg-[rgb(19,19,19)] absolute top-0 left-0  w-0 flex  items-center flex-col overflow-x-hidden">
+    <div
+      class="RecentProjectTitle mt-20 mb-8 text-xl text-white tracking-wide uppercase font-semibold flex justify-center items-center text-center md:text-6xl">
+      Recent
+      Projects</div>
+    <div class="Newwrapper w-full  flex flex-col sm:flex-row  border">
+
+      <div class="porject1 w-screen h-[70vh] sm:w-[60%] flex justify-center items-center  ">
+        <div
+          class="bgImage h-[90%] w-[95%] bg-center bg-cover bg-no-repeat   bg-[url('https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] ">
+        </div>
+      </div>
+      <div class="porject1  w-screen h-[70vh]  sm:w-[40%] flex justify-center items-center">
+        <div class="text h-[90%] w-[90%] text-white flex justify-center items-center flex-col">
+          <p class="text-4xl w-[90%] pb-8 tracking-wide font-semibold text-center sm:text-5xl">
+            Appointment
+            System</p>
+          <p class="text-base font-light w-[90%] ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            A, porro sed?
+            Cumque
+            dolore voluptates
+            impedit molestiae voluptas possimus quisquam iste veniam excepturi quas dolorum in sit eligendi,
+            ipsum omnis nihil natus assumenda. Quibusdam itaque consectetur quis perspiciatis. Magni esse in
+            natus error laboriosam consectetur fugit animi beatae, quasi iusto corporis!</p>
+          <button class="bg-white text-black w-[50%] rounded-3xl p-3 tracking-wide mt-6">Watch Demo</button>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="Newwrapper w-full flex flex-col-reverse sm:flex-row border">
+      <div class="porject1  w-screen h-[70vh]  sm:w-[40%] flex justify-center items-center">
+        <div class="text h-[90%] w-[90%] text-white flex justify-center items-center flex-col">
+          <p class="text-4xl w-[90%] pb-8 tracking-wide font-semibold text-center sm:text-5xl">Wild Life
+            Protection</p>
+          <p class="text-base font-light w-[90%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+            porro sed?
+            Cumque
+            dolore voluptates
+            impedit molestiae voluptas possimus quisquam iste veniam excepturi quas dolorum in sit eligendi,
+            ipsum omnis nihil natus assumenda. Quibusdam itaque consectetur quis perspiciatis. Magni esse in
+            natus error laboriosam consectetur fugit animi beatae, quasi iusto corporis!</p>
+          <button class="bg-white text-black w-[50%] rounded-3xl p-3 tracking-wide mt-6">Watch Demo</button>
+
+        </div>
+      </div>
+      <div class="porject1 w-screen h-[70vh] sm:w-[60%] flex justify-center items-center  ">
+        <div
+          class="bgImage h-[90%] w-[95%] bg-center bg-cover bg-no-repeat   bg-[url('https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] ">
+
+        </div>
+      </div>
+
+    </div>
+    <!-- G A P  C O N -->
+    <div class="wrapper w-full flex flex-col sm:flex-row">
+
+      <div class="porject1 bg-black w-screen h-[50vh] border  sm:w-[30%]  ">
+        <div
+          class="bgImage h-full w-full bg-center bg-cover bg-no-repeat bg-[url('https://images.pexels.com/photos/2062462/pexels-photo-2062462.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] ">
+          <p
+            class="recentProjectsNames h-full w-full bg-black bg-opacity-40  text-white flex justify-center items-center text-center text-3xl md:text-5xl cursor-pointer hover:bg-opacity-0 ease-in-out duration-150 ">
+            Boing Zet Company</p>
+        </div>
+      </div>
+      <div class="porject1 bg-black w-screen h-[50vh] border  sm:w-[70%] ">
+        <div
+          class="bgImage h-full w-full bg-center bg-cover bg-no-repeat bg-[url('https://images.pexels.com/photos/13766346/pexels-photo-13766346.jpeg')] ">
+          <p
+            class="recentProjectsNames h-full w-full bg-black bg-opacity-40  text-white flex justify-center items-center text-center text-3xl md:text-5xl cursor-pointer hover:bg-opacity-0 ease-in-out duration-150">
+            Logistic Company</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Newwrapper w-full  flex flex-col sm:flex-row  border">
+
+      <div class="porject1 w-screen h-[70vh] sm:w-[60%] flex justify-center items-center  ">
+        <div
+          class="bgImage h-[90%] w-[95%] bg-center bg-cover bg-no-repeat   bg-[url('https://images.pexels.com/photos/2696134/pexels-photo-2696134.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] ">
+
+        </div>
+      </div>
+      <div class="porject1  w-screen h-[70vh]  sm:w-[40%] flex justify-center items-center">
+        <div class="text h-[90%] w-[90%] text-white flex justify-center items-center flex-col">
+          <p class="text-4xl w-[90%] pb-8 tracking-wide font-semibold text-center sm:text-5xl">Forest
+            Protection and Greemary</p>
+          <p class="text-base font-light w-[90%]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+            porro sed?
+            Cumque
+            dolore voluptates
+            impedit molestiae voluptas possimus quisquam iste veniam excepturi quas dolorum in sit eligendi,
+            ipsum omnis nihil natus assumenda. Quibusdam itaque consectetur quis perspiciatis. Magni esse in
+            natus error laboriosam consectetur fugit animi beatae, quasi iusto corporis!</p>
+          <button class="bg-white text-black w-[50%] rounded-3xl p-3 tracking-wide mt-6">Watch Demo</button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- S K I L L S   A N D   E  X  P  E  R I E N C E -->
+  <div
+    class="Page bg-[rgb(19,19,19)] absolute top-0 left-0 h-screen  w-0 flex  items-center flex-col overflow-x-hidden">
+    <div class="topic">Skills and </div>
+    <div class="list h-screen w-[95%] mt-16 flex flex-col sm:flex-row sm:flex-wrap ">
+
+      <div class="items relative w-full h-96 min-h-[70vh] bg-black mb-6 sm:w-1/2">
+        <div class="InfoAboutLan h-[40%] flex justify-center items-center flex-col">
+          <p class="text-4xl font-medium text-white tracking-wide">Python</p>
+          <p class="text-base font-light text-white mt-4 tracking-wide  text-center">Python is a
+            high-level,
+            general-purpose programming language. </p>
+          <div class="btns  w-[90%] flex items-center justify-around">
+            <button
+              class="bg-white text-black w-[40%] rounded-3xl p-2 mt-4 tracking-wide text-sm min-w-8 max-w-32">Python
+              Projects</button>
+
+          </div>
+        </div>
+        <div class="LangImg h-[60%] w-full flex justify-center items-center">
+          <img loading="lazy" class="w-40"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png"
+            alt="Python">
+        </div>
+
+      </div>
+
+      <div class="items w-full min-h-[70vh] bg-[#1a1f2980] mb-6 sm:w-1/2 ">
+        <div class="InfoAboutLan h-[30%] flex justify-center items-center flex-col">
+          <p class="text-4xl  font-medium text-white mt-5 tracking-wide">Java Script</p>
+          <p class="text-sm  font-light text-white tracking-wide  text-center">JavaScript (JS) is a
+            lightweight interpreted programming language with first-class
+            functions. </p>
+          <div class="btns  w-[90%] mt-6 flex items-center justify-around">
+            <button class="bg-white text-black w-[40%] rounded-3xl p-2 tracking-wide text-sm min-w-8 max-w-32">JS
+              Projects</button>
+          </div>
+        </div>
+        <div class="LangImg h-[70%] w-full  flex justify-center items-center">
+          <img loading="lazy" class="w-48"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png"
+            alt="Python">
+        </div>
+
+      </div>
+
+      <div class="items w-full min-h-[70vh] bg-black mb-6  sm:w-1/2 ">
+        <div class="InfoAboutLan h-[30%] flex justify-center items-center flex-col">
+          <p class="text-4xl  font-medium text-white mt-5 tracking-wide">React</p>
+          <p class="text-sm  font-light text-white tracking-wide  text-center">React is a free and
+            open-source front-end JavaScript library for building user interfaces based on components by
+            Facebook Inc. </p>
+          <div class="btns  w-[90%] mt-6 flex items-center justify-around">
+            <button class="bg-white text-black w-[40%] rounded-3xl p-2 tracking-wide text-sm min-w-8 max-w-32">React
+              Projects</button>
+          </div>
+        </div>
+        <div class="LangImg h-[70%] w-full  flex justify-center items-center">
+          <img loading="lazy" class="w-48"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/1200px-React_Logo_SVG.svg.png"
+            alt="React">
+        </div>
+
+      </div>
+      <div class="items w-full min-h-[70vh] bg-[#1a1f2980] mb-6 sm:w-1/2 ">
+        <div class="InfoAboutLan h-[30%] flex justify-center items-center flex-col">
+          <p class="text-4xl  font-medium text-white mt-5 tracking-wide">Node.js</p>
+          <p class="text-sm  font-light text-white tracking-wide  text-center">Node.js is a cross-platform,
+            open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and
+            more. </p>
+          <div class="btns  w-[90%] mt-6 flex items-center justify-around">
+            <button class="bg-white text-black w-[40%] rounded-3xl p-2 tracking-wide text-sm min-w-8 max-w-32">React
+              Projects</button>
+          </div>
+        </div>
+        <div class="LangImg h-[70%] w-full  flex justify-center items-center">
+          <img loading="lazy" class="w-48" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+            alt="React">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
